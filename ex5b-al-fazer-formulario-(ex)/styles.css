@@ -1,0 +1,15 @@
+.container {
+    background: linear-gradient(145deg, #df95a8, #db34d3);
+    padding: 2rem;
+}
+
+.custom-icon {
+    background-color: rgb(237, 212, 230);
+}
+
+.btn.btn-primary.custom-button {
+    background:  rgb(237, 212, 230);
+    padding: 0.8rem 3rem;
+    border-radius: 10px;
+    border: none;
+}

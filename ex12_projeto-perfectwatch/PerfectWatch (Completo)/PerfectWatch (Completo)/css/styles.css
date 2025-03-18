@@ -13,13 +13,177 @@ body {
 .primary-bg-color {
     background-color: #252525;
 }
-
 .destaque {
     background-color: #0D0D0D;
 }
-
 .secondary-bg-color {
     background-color: #976DF2;
+}
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+.dark-bg-color {
+    background-color: #0D0D0D;
+}
+
+/* Classes para diferentes cores de texto */
+.primary-color {
+    color: #976DF2;
+}
+
+.secondary-color {
+    color: #F2F2F2;
+}
+
+.light-color {
+    color: #FCF5EB;
+}
+
+/* ______________________________________________ */
+/* Estilos para a barra de navegação (navbar) */
+
+/* Ajusta a direção e alinhamento dos itens da barra de navegação */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Define margem à esquerda para os itens da barra de navegação */
+#navbar .navbar-nav li {
+    margin-left: 1rem;
+}
+
+/* Define a cor do texto e links na barra de navegação */
+#navbar a,
+#navbar button {
+    color: #FFF;
+}
+
+/* Ajusta a posição dos itens da barra de navegação */
+#navbar li {
+    position: relative;
+}
+
+/* Define estilo para ícones na barra de navegação */
+#navbar i {
+    font-size: 20px;
+}
+
+/* Define estilo de cor quando o mouse passa sobre os ícones */
+#navbar i:hover {
+    color: #976DF2;
+}
+
+/* Define estilo para caixa com numero (ex: quantidade de itens) */
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ef3636;
+    text-align: center;
+}
+
+/* Posiciona a caixa com numero no item de sacola de compras */
+#bag-item span {
+    left: 20px;
+}
+
+/* Estilos para a marca/logo na barra de navegação */
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo de hover para links 'sobre' */
+.sobre a:hover {
+    color: #0D0D0D !important;
+}
+
+/* Ajusta estilo quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+/* ajusta espaçamento entre itens da barra de navegação */
+#navbar-items {
+    justify-content: space-between;
+}
+
+/* Ajusta espaçamento quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+    #navbar-items {
+        display: flex;
+        min-width: 80%;
+    }
+}
+
+/* Estilos para formularios de busca e newsletter */
+#search-form,
+#news-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* Ajusta largura e margem quando a largura da tela é maior que 768px */
+@media(min-width: 768px) {
+    #search-form,
+    #news-form {
+        width: 50%;
+        margin: 0;
+    }   
+}
+
+/* Estilos para campos de input em formulários */
+#search-form,
+#news-form {
+    border: 2px solid #F2F2F2;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+/* Estilos para campos de input quando focados */
+#search-form input,
+#news-form input {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+/* Estilos para campos de input quando focados */
+#search-form input:focus,
+#news-form input:focus {
+    box-shadow: none;
+}
+
+/* Estilos para placeholders em campos de input */
+#search-form input::placeholder,
+#news-form input::placeholder {
+    color: #FFF;
+}
+
+/* ______________________________________________ */
+/* Estilos para a barra de navegação inferior (bottom-navbar) */
+
+/* Ajusta a posição dos itens na barra de navegação inferior */
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+/* Define cor do texto e links na barra de navegação inferior */
+#bottom-navbar-container a {
+    color: #FFF;
+    font-weight: 600;
+}
+
+/* Define tamanho do icone do botão para mostrar/esconder o menu */
+.navbar-toggler {
+    font-size: 1.5em;
 }
 
 /* Estilos para os banners */
@@ -87,7 +251,7 @@ body {
         max-width: 30%;
     }
 
-    /* Ajusta tamanho do título dos mini banner */
+    /* Ajusta tamanho do título nos mini banner */
     #mini-banners .col-12 h2 {
         font-size: 2.2rem;
     }
@@ -136,4 +300,165 @@ body {
 /* Estilos de hover específicos para o terceiro mini banner */
 #mini-banners #mini-banner-3 a:hover {
     color: #976DF2;
+}
+
+/* Best Sellers */
+
+/* define altura e ajusta o redimensionamento das imagens nos cartões */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Define espaçamento interno para a seção de best sellers */
+#best-sellers {
+    padding: 4rem 0;
+}
+
+/* Remove margens horizontais para a linha de produtos */
+#best-sellers .row {
+    margin: 0;
+}
+
+/* Ajusta o espaçamento interno das colunas dos produtos */
+#best-sellers .col-md-3 {
+    padding: 0;
+}
+
+/* Estilos para o título da seção */
+.tittle {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Media query para telas com larguras mínimas de 768px */
+@media(min-width: 768px) {
+    /* Ajusta o alinhamento do título para a esquerda */
+    .title {
+        text-align: left;
+    }
+}
+
+/* Estilos para os preços */
+.original-price {
+    font-size: 18px;
+    color: #F2F2F2;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.discount-price {
+    font-size: 24px;
+    color: #976DF2;
+}
+
+/* Estilos para os cartões de produtos */
+.card {
+    text-align: center;
+    border-radius: 0;
+}
+
+/* Ajusta o tamanho da imagem nos cartões */
+.card img {
+    width: 140px;
+    margin: 2em auto;
+}
+
+/* Estilos para a categoria do produto nos cartões */
+.card .card-category {
+    font-size: .8rem;
+}
+
+/* Estilos para o texto nos cartões */
+.card .card-text {
+    margin-right: 2rem 0;
+    font-weight: bold;
+}
+
+/* Estilos para os botões de compra */
+.btn {
+    background-color: transparent;
+    border-color: #976DF2;
+}
+
+/* Estilos de hover para os botões de compra */
+.btn:hover {
+    background-color: #976DF2;
+    border-color: #976DF2;
+}
+
+/* Bottom banner */
+
+/* Define cor de fundo, espaçamento interno e margens para o baner */
+#bottom-banner {
+    background-color: #0D0D0D;
+    padding: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+/* Define estilos para subtítulo da oferta e título */
+#bottom-banner .offer-subtitle,
+#bottom banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Define estilo para o botão */
+#bottom-banner .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+/* Define tamanho máximo para a imagem */
+#bottom-banner img {
+    max-width: 175px;
+}
+
+/* Media query para telas com largura mínima de 768px */
+@media(min-width: 768px) {
+    /* Ajusta tamanho do título para telas maiores */
+    #bottom-banner h2 {
+        font-size: 5em;
+    }
+}
+
+/* New Products */
+
+/* Define margem inferior para a seção de novidades */
+#new-products {
+    margin-bottom: 5rem;
+}
+
+/* Estilos para o banner de novidades */
+#new-products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+}
+
+/* Estilos para o título do banner de novidades */
+#new-product-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Ajusta o espaçameto interno das colunas dos produtos */
+#new-products .col-md-4 {
+    padding: 0;
+}
+
+/* Define tamanho e margens para as imagens nos cartões de produtos */
+#new-products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
 }

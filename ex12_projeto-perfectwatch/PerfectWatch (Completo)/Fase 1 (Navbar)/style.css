@@ -161,6 +161,7 @@ body {
     box-shadow: none;
 }
 
+/* Estilos para placeholders em campos de input */
 #search-form input::placeholder,
 #news-form input::placeholder {
     color: #FFF;

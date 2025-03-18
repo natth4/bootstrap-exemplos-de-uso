@@ -13,19 +13,15 @@ body {
 .primary-bg-color {
     background-color: #252525;
 }
-
 .destaque {
     background-color: #0D0D0D;
 }
-
 .secondary-bg-color {
     background-color: #976DF2;
 }
-
 .light-bg-color {
     background-color: #FCF5EB;
 }
-
 .dark-bg-color {
     background-color: #0D0D0D;
 }
@@ -165,6 +161,7 @@ body {
     box-shadow: none;
 }
 
+/* Estilos para placeholders em campos de input */
 #search-form input::placeholder,
 #news-form input::placeholder {
     color: #FFF;
@@ -255,7 +252,7 @@ body {
         max-width: 30%;
     }
 
-    /* Ajusta tamanho do título dos mini banner */
+    /* Ajusta tamanho do título nos mini banner */
     #mini-banners .col-12 h2 {
         font-size: 2.2rem;
     }

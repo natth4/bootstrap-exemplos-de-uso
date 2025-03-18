@@ -1,0 +1,35 @@
+/* New Products */
+
+/* Define margem inferior para a seção de novidades */
+#new-products {
+    margin-bottom: 5rem;
+}
+
+/* Estilos para o banner de novidades */
+#new-products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+}
+
+/* Estilos para o título do banner de novidades */
+#new-product-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Ajusta o espaçameto interno das colunas dos produtos */
+#new-products .col-md-4 {
+    padding: 0;
+}
+
+/* Define tamanho e margens para as imagens nos cartões de produtos */
+#new-products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+}

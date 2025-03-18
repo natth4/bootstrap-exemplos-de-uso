@@ -46,7 +46,7 @@ Esse projeto está licenciado sob a licença **MIT**. Veja o arquivo LICENSE par
 
 ## Contato 📬
 
-Se você tiver alguma dúvida ou sugestão, fique à vontade para me contatar diretamente através do meu e-mail: exemplo@gmail.com.
+Se você tiver alguma dúvida ou sugestão, fique à vontade para me contatar diretamente através do meu e-mail: nathalia.leite@aluno.senai.br
 
 *Desenvolvido por SENAI/SESI 2DA | 2025*
 
